@@ -23,7 +23,7 @@ public Class Util {
     
     private static final Util instance = new Util();
 
-    public Util getInstance() {
+    public static Util getInstance() {
         return instance; 
     }
 }
