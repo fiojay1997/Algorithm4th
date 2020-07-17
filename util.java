@@ -1,4 +1,6 @@
-public Class Util {
+public abstract Class Util {
+
+    public abstract void sort(Comparable[] a);
 
 	// Check if the array has been sorted
     public static boolean isSorted(Comparable[] arr) {
@@ -32,7 +34,7 @@ public Class Util {
     public static Duration calculateRunningTime() {
     	Instant start = Instant.now();
     	// Operating sort here.
-    	Sort();
+    	sort();
     	Intant end = Instant.now();
     	Duration duration = Duration.between(start, end);
     	return duration;
