@@ -1,5 +1,11 @@
 public Class SelectionSort extends Util {
 
+	private Comparable[] a;
+
+	public SelectionSort(Comparable[] a) {
+		this.a = a;
+	}
+
 	public void sort(Comparable[] a) {
 		int n = a.length;
 		for (int i = 0; i < n; i++) {
