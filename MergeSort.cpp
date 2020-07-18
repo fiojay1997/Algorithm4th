@@ -37,7 +37,7 @@ int main()
 {
 	scanf("%d", &n);
 
-	for (int i = 0; i < n; i++) scanf("%d", q[i]);
+	for (int i = 0; i < n; i++) scanf("%d", &q[i]);
 
 	merge_sort(q, 0, n - 1);
 
