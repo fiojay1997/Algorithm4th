@@ -31,6 +31,7 @@ void merge_sort(int q[], int l, int r)
 
 	// Copy the temp array to the original array
 	for (int i = l, j = 0; i <= r; i++, j++) q[i] = temp[j];
+
 }
 
 int main()
