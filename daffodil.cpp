@@ -12,7 +12,6 @@ bool daffodil(int x)
 		divisor *= 10;
 		temp /= 10;
 	}
-	printf("%d\n", sum);
 	return sum == x;
 }
 
