@@ -20,4 +20,5 @@ int main()
 	scanf("%d\n", &x);
 	if (daffodil(x)) printf("%s\n", "true");
 	else printf("%s\n", "false");
+	return 0;
 }
