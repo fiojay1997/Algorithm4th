@@ -8,7 +8,6 @@ vector<vector<string>> res;
 
 vector<vector<string>> place_queen(int n)
 {
-	// '.' for empty grid, 'Q' for queen
 	vector<string> board(n, string(n, '.'));
     backtrack(board, 0);
     return res;
@@ -43,6 +42,6 @@ int main()
 		cout << endl;
 	}
 
-	return 0;
+	return 0;k
 
 }
