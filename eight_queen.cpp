@@ -32,6 +32,18 @@ void backtrack(vector<string>& borad, int row)
     }
 }
 
+bool isValid(vector<string>& board, int row, int col)
+{
+	for (auto a : board)
+	{
+		for (int i = 0; i < row; i++)
+			return board[i] == 'Q';
+		for (int j = 0; j < col; j++)
+			return board[j] == 'Q';
+	}
+	return true;
+}
+
 int main()
 {
 	vector<vector<string>> res = place_queen(10);
