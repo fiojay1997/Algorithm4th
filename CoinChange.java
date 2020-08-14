@@ -1,6 +1,6 @@
 import java.lang.Math;
 
-public class CoinChange {
+public Class CoinChange {
 
 	// recursive 
 	public int f(int x) {

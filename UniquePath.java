@@ -1,4 +1,4 @@
-public class UniquePath {
+public Class UniquePath {
 
 	public int findPath(int m, int n) {
 		int[][] f = new int[m][n];
