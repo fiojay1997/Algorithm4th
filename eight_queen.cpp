@@ -32,16 +32,27 @@ void backtrack(vector<string>& borad, int row)
     }
 }
 
-bool isValid(vector<string>& board, int row, int col)
+bool isValid(vector<string>& board, int row, int col) 
 {
-	for (auto a : board)
-	{
-		for (int i = 0; i < row; i++)
-			return board[i] == 'Q';
-		for (int j = 0; j < col; j++)
-			return board[j] == 'Q';
-	}
-	return true;
+    int n = board.size();
+    for (int i = 0; i < n; i++) 
+    {
+        if (board[i][col] == 'Q')
+            return false;
+    }
+    for (int i = row - 1, j = col + 1; 
+            i >= 0 && j < n; i--, j++) 
+    {
+        if (board[i][j] == 'Q')
+            return false;
+    }
+    for (int i = row - 1, j = col - 1;
+            i >= 0 && j >= 0; i--, j--) 
+    {
+        if (board[i][j] == 'Q')
+            return false;
+    }
+    return true;
 }
 
 int main()
@@ -54,6 +65,6 @@ int main()
 		cout << endl;
 	}
 
-	return 0;k
+	return 0;
 
 }
