@@ -15,7 +15,7 @@ public Class JumpGame2 {
 					continue;
 				}
 				if (i == 0 && j == 0) {
-					f[i][j] = 0;
+					f[i][j] = 1;
 					continue;
 				}
 				f[i][j] = 0;
