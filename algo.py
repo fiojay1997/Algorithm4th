@@ -50,4 +50,7 @@ def nthnumeric(N, Sigma = {'a', 'b'}):
         return (S[0] * len_to_makeup + shomo(relevant_binstr, lambda x : S[1] 
             if x == '1' else S[0]))
 
+	
+
+
 
