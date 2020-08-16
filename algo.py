@@ -1,3 +1,5 @@
+from math import floor, log, pow
+
 def phi():
     return set()
 
@@ -30,3 +32,20 @@ def lexlt(s, t):
 	if (s[0] < t[0]):
 		return True
 	return (s[0] == t[0]) & lexlt((s[1::], t[1::]))
+
+def nthnumeric(N, Sigma = {'a', 'b'}):
+    if (type(Sigma) == set):
+        S = Sigma
+    else:
+        assert(type(Sigma) == list), S = Sigma
+    assert(len(Sigma) == 2)
+    if (N == 0):
+        return ""
+    else:
+        width = floor(log(N + 1, 2))
+        tofill = int(N - pow(2, width) + 1)
+        relevant_binstr = bin(tofill)[2::]
+        len_to_makeup = width - len(relevant_binstr)
+        return (S[0] * len_to_makeup + shomo(relevant_binstr, lambda x : S[1] 
+            if x == '1' else S[0]))
+
