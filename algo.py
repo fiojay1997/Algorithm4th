@@ -12,7 +12,7 @@ def exp(L, n):
 def lunion(L1,L2):
     return L1 | L2
 
-def lint(1,L2):
+def lint(L1,L2):
     return L1 & L2
 
 def star(L, n):
@@ -21,7 +21,7 @@ def star(L, n):
 def shmomo(s, f):
     return "".join(map(f, s))
 
-def lhomo(l. f):
+def lhomo(l, f):
     return set(map(lambda S : shomo(s, f), l))
 
 def lexlt(s, t): 
@@ -37,7 +37,8 @@ def nthnumeric(N, Sigma = {'a', 'b'}):
     if (type(Sigma) == set):
         S = Sigma
     else:
-        assert(type(Sigma) == list), S = Sigma
+        assert(type(Sigma) == list)
+        S = Sigma
     assert(len(Sigma) == 2)
     if (N == 0):
         return ""
@@ -48,4 +49,5 @@ def nthnumeric(N, Sigma = {'a', 'b'}):
         len_to_makeup = width - len(relevant_binstr)
         return (S[0] * len_to_makeup + shomo(relevant_binstr, lambda x : S[1] 
             if x == '1' else S[0]))
+
 
