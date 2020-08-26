@@ -1,7 +1,12 @@
 #include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
 
-int prev[];
 using namespace std;
+
+int node_count = 0;
+int prev[];
 
 bool build_tree(int pl, int pr, int il, int ir, int& root)
 {
@@ -16,7 +21,7 @@ bool build_tree(int pl, int pr, int il, int ir, int& root)
     for (int i = pl + 1; i <= q; i++) 
         if (index[i] > p)
             return false;
-    root = ++nodecount;
+    root = ++node_count;
     if (!build_tree(pl + 1, pr, p + 1, il, p - 1, left[root])) return false;
     if (!build_tree(q + 1, pr, p + 1, ir, p + 1, right[root])) return false;
     return true;
