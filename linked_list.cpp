@@ -2,7 +2,7 @@ int list[];
 int prev[];
 int next[];
 
-void insert_node(int i int x)
+void insert_node(int i, int x)
 {
     prev[x] = prev[i];
     next[x] = i;
