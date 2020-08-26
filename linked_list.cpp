@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 int list[];
 int prev[];
 int next[];
@@ -21,4 +25,9 @@ void init(int x)
     list[0] = x;
     prev[x] = 0;
     next[x] = 0;
+}
+
+void traversal(int x)
+{
+    while (x = next[x]) cout << x << endl; 
 }
