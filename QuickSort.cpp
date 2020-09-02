@@ -11,7 +11,7 @@ void quick_sort(int arr[], int l, int r)
 {
     if (l >= r) return;
 
-    int x = arr[l + (r - l) / 2];
+    int x = arr[(l + r) >> 1];
     int i = l - 1;
     int j = r + 1;
 
