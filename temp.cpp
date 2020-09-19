@@ -27,8 +27,8 @@ ostream& operator << (ostream &out, const Point<T>& p)
 
 int main() 
 {
-	Point<int> a(1,2), b(3,4); 
-	Point<double> c(1.1,2.2), d(3.3,4.4); 
-	cout << a+b << " " << c+d << "\n"; 
-	return 0;
+    int v = 3451;
+    int w = 3451 << 4;
+    cout << w;
+    return 0;
 }
