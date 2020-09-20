@@ -24,7 +24,7 @@ bool solve_util(int n, int row, position positions[])
 
         for (int queen = 0; queen < row; queen++)
         {
-            if (position[queen].col == col || positions[queen].row - position[queen].col
+            if (positions[queen].col == col || positions[queen].row - positions[queen].col
                == row - col || positions[queen].row + positions[queen].col == row + col)
             {
                 found_safe = false;
