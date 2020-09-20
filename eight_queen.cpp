@@ -4,16 +4,19 @@
 
 using namespace std;
 
-vector<vector<string>> res;
+vector< vector<string> > res;
+vector< vector<string> > place_queen(int n);
+void backtrack(vector<string>& board, int row);
+bool isValid(vector<string>& board, int row, int col);
 
-vector<vector<string>> place_queen(int n)
+vector< vector<string> > place_queen(int n)
 {
 	vector<string> board(n, string(n, '.'));
     backtrack(board, 0);
     return res;
 } 
 
-void backtrack(vector<string>& borad, int row)
+void backtrack(vector<string>& board, int row)
 {
 	if (row == board.size()) 
 	{
@@ -48,10 +51,10 @@ bool isValid(vector<string>& board, int row, int col)
 
 int main()
 {
-	vector<vector<string>> res = place_queen(10);
-	for (int i = 0; i < res.size; i++)
+	vector< vector<string> > res = place_queen(10);
+	for (int i = 0; i < res.size(); i++)
 	{
-		for (int j = 0; j < 10)
+		for (int j = 0; j < 10; j++)
 			cout << res[i][j];
 		cout << endl;
 	}
