@@ -8,16 +8,9 @@ int a[N];
 
 int[] get_res()
 {
-    int sum = 0;
-    for (int i = 0; i < n; i++) sum += a[i];
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = n - 1; j > 0; j--)
-        {
-            
-        }
-    }
+    a[0] = 0;
+    int ls_bigger[];
+    for (int i = 0; i < n; i++)  
 }
 
 int main()
