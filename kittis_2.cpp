@@ -12,7 +12,7 @@ int get_majority(unsigned long x[], unsigned long y[])
     int res = 0;
     unsigned long dis = 0;
     int ct = 0;
-    unsigned long long dp = pow(d, 2);
+    long long dp = pow(d, 2);
     for (int i = 0; i < k - 1; i++)
     {
         dis = pow(x[i] - y[i], 2) + pow(x[i + 1] - y[i + 1], 2);
