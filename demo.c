@@ -3,6 +3,7 @@
 
 int main()
 {
+    char* str = "str";
     const double pi = acos(-1.0); 
     double r, h, s1, s2, s; 
     scanf("%lf%lf", &r, &h);
