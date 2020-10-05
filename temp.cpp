@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -27,8 +28,9 @@ ostream& operator << (ostream &out, const Point<T>& p)
 
 int main() 
 {
-    int v = 3451;
-    int w = 3451 << 4;
-    cout << w;
+    string s1 = "abc";
+    string s2 = "bac";
+    int res = s1.compare(s2);
+    cout << res << endl;
     return 0;
 }
