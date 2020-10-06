@@ -11,6 +11,11 @@ void push(int x)
 
 }
 
+void add(int x)
+{
+    stk[++k] = x;
+}
+
 int pop()
 {
 	return stk[tt--];
