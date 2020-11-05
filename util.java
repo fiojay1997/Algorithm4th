@@ -13,6 +13,7 @@ public abstract Class Util {
 
     // Check if v is less than w
     public static boolean less(Comparable v, Comparable w) {
+        System.out.println("comparing");
         return v.compareTo(w) < 0;
     }
 
